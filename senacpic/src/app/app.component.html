@@ -8,59 +8,11 @@
     <title>Senac Pic</title>
   </head>
   <body>
-      <div class="card-group">
-          <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTs0Z3XAYIOxty1cpa82K6ReC0cHA_iMEWV9_gcEW8ZKbwwx5o" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{titulo}}</h5>
-              <p class="card-text">{{descricao}}</p>
-              <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-              <a href="#" class="card-link">Curtir</a>
-            <input type="checkbox" class="card-link">Seguir
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://vignette.wikia.nocookie.net/dragonuniverse/images/9/96/Super_Saiyan_Blue_Goku_%28Broly%29.jpeg/revision/latest?cb=20181126041421" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{titulo2}}</h5>
-                <p class="card-text">{{descricao2}}</p>
-              <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-              <a href="#" class="card-link">Curtir</a>
-            <input type="checkbox" class="card-link">Seguir
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRNYWy9uz_i0w8qfByeu_I38pG_MbV9NC6Te4zocBXXtuX4Erhw" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{titulo3}}</h5>
-                <p class="card-text">{{descricao3}}</p>
-              <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-              <a href="#" class="card-link">Curtir</a>
-              <input type="checkbox" class="card-link">Seguir
-            </div>
-          </div>
+      <div class="container">
+        <div class="row">
+          <app-foto *ngFor="let f of fotos"  [url]="f.url" [titulo]="f.titulo" [descricao]="f.descricao"></app-foto>
         </div>
-    <!--<div class="container">
-      <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <img src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2017/12/yuyu-hakusho.jpg" class="rounded img-fluid float-left" alt="...">
-            <h6 class="card-subtitle mb-2 text-muted">{{titulo}}</h6>
-            <p class="card-text">{{descricao}}</p>
-            <a href="#" class="card-link">Curtir</a>
-            <a href="#" class="card-link">Seguir</a>
-          </div>
         </div>
-        
-    </div>-->
   </body>
 </html>
 
-<!--<div class="container">
-  <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <img src="https://vignette.wikia.nocookie.net/dragonuniverse/images/9/96/Super_Saiyan_Blue_Goku_%28Broly%29.jpeg/revision/latest?cb=20181126041421" class="rounded img-fluid float-left" alt="...">
-        <h6 class="card-subtitle mb-2 text-muted">{{titulo}}</h6>
-        <p class="card-text">{{descricao}}</p>
-        <a href="#" class="card-link">Curtir</a>
-        <a href="#" class="card-link">Seguir</a>
-      </div>-->
