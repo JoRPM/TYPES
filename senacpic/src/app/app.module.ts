@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './foto/app.routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
   imports: [
     BrowserModule,
     FotoModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,9 +10,13 @@
   <body>
       <div class="container">
         <div class="row">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="row">
           <app-foto *ngFor="let f of fotos"  [url]="f.url" [titulo]="f.titulo" [descricao]="f.descricao"></app-foto>
         </div>
         </div>
+      
   </body>
 </html>
 
